@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>farzana mahdavi </title>
+    <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/png" href="logo.jfif">
+</head>
+
+</html>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+
+            <div class="brand">
+                <span class="brand-name">
+                    <i data-lucide="layers"></i>
+                    Taxr
+                </span>
+
+                <div class="avatar">
+                    <i data-lucide="user-round"></i>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <i data-lucide="search"></i>
+                <input class="search" type="search" placeholder="Search...">
+            </div>
+
+            <div class="money-row">
+                <span class="income">
+                    <i data-lucide="trending-up"></i>
+                    Income
+                </span>
+                <strong>+$3,498.21</strong>
+            </div>
+
+            <div class="money-row">
+                <span class="expense">
+                    <i data-lucide="trending-down"></i>
+                    Expenses
+                </span>
+                <strong>-$123.38</strong>
+            </div>
+
+            <p class="section-label">Quick menu</p>
+
+            <div class="quick-menu">
+                <div class="quick-item" title="Profile">
+                    <i data-lucide="user-round"></i>
+                    <small>acount</small>
+                </div>
+
+                <div class="quick-item featured" title="Students">
+                    <i data-lucide="users-round"></i>
+                    <small>parents</small>
+                </div>
+
+                <div class="quick-item" title="Calendar">
+                    <i data-lucide="calendar-days"></i>
+                    <small>year</small>
+                </div>
+
+                <div class="quick-item" title="Wallet">
+                    <i data-lucide="wallet"></i>
+                    <small>wallet</small>
+                </div>
+
+                <div class="quick-item" title="Statistics">
+                    <i data-lucide="chart-no-axes-column-increasing"></i>
+                    <small>Information</small>
+                </div>
+
+                <div class="quick-item" title="Menu">
+                    <i data-lucide="menu"></i>
+                    <small>menu</small>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <nav class="nav">
+                    <a href="#" class="active">Dashboard</a>
+                    <a href="#payments">Payments</a>
+                    <a href="#balance">Statistics</a>
+                    <a href="#transactions">Reports</a>
+                </nav>
+
+                <button class="add-btn" id="addInvoice">
+                    📄 &nbsp; Add invoice
+                </button>
+            </header>
+
+            <h1>card dashboard</h1>
+
+            <section class="cards" id="payments">
+                <article class="payment-card">
+                    <div class="app-icon">A</div>
+
+                    <div class="card-info">
+                        <small>Payment Due In</small>
+                        <p>6 days</p>
+                    </div>
+
+                    <div class="price">$23.38</div>
+                </article>
+
+                <article class="payment-card">
+                    <div class="app-icon">◉</div>
+
+                    <div class="card-info">
+                        <small>Payment Due In</small>
+                        <p>9 days</p>
+                    </div>
+
+                    <div class="price">$8.99</div>
+                </article>
+
+                <article class="payment-card">
+                    <div class="app-icon">●</div>
+
+                    <div class="card-info">
+                        <small>Payment Due In</small>
+                        <p>15 days</p>
+                    </div>
+
+                    <div class="price">$3.99</div>
+                </article>
+            </section>
+
+            <section class="bottom-grid">
+                <div id="balance">
+                    <h2 class="panel-title">Last week's balance</h2>
+
+                    <div class="chart-box">
+                        <div class="chart">
+                            <div class="bar-group">
+                                <div class="bar" style="--height:55px"></div>
+                                <span>17 Thu</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar green" style="--height:75px"></div>
+                                <span>18 Fri</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar green" style="--height:95px"></div>
+                                <span>19 Sat</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar green" style="--height:85px"></div>
+                                <span>20 Sun</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar green" style="--height:75px"></div>
+                                <span>21 Mon</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar" style="--height:65px"></div>
+                                <span>22 Tue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="transactions">
+                    <h2 class="panel-title">Recent transactions</h2>
+
+                    <div class="transactions-box">
+                        <div class="transactions">
+
+                            <div class="transaction">
+                                <div class="person">
+                                    <i data-lucide="user-round"></i>
+                                </div>
+                                <p>Emma </p>
+                                <strong class="positive">+$240.00</strong>
+                            </div>
+
+                            <div class="transaction">
+                                <div class="person">
+                                    <i data-lucide="user-round"></i>
+                                </div>
+                                <p>Anna</p>
+                                <strong class="negative">-$23.38</strong>
+                            </div>
+
+                            <div class="transaction">
+                                <div class="person">
+                                    <i data-lucide="user-round"></i>
+                                </div>
+                                <p>Jan </p>
+                                <strong class="positive">+$199.99</strong>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+   
+
+    <script>
+        lucide.createIcons();
+    </script>
+    
+</body>
+</html>
